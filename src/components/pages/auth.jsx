@@ -6,6 +6,8 @@ export default function Auth () {
     return (
         <div>
             <Nav />
+            <div className={'gradient_background'}>
+            </div>
         </div>
     )
 }

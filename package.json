@@ -19,7 +19,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "compile-scss": "sass --watch ./src/main.scss ./src/main.css"
+    "compile-scss": "sass --watch ./src/styles/nav.scss ./src/styles/nav.css"
   },
   "eslintConfig": {
     "extends": [

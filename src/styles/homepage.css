@@ -1,0 +1,52 @@
+.homepage__background {
+  width: 100%;
+  height: 1039px;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.homepage__center {
+  display: grid;
+  margin: auto;
+  width: 100%;
+  top: 45%;
+  transform: translate(0, -50%);
+  position: absolute;
+  text-align: center;
+}
+.homepage__center span {
+  font-size: 50px;
+  font-style: italic;
+  font-family: Crimson_Pro, serif;
+}
+.homepage__center .homepage__center__description {
+  font-size: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: Crimson_Pro, serif;
+  font-style: italic;
+}
+.homepage__center .homepage__center__authBtn {
+  margin-top: 20px;
+  display: block;
+}
+.homepage__center a {
+  font-family: Crimson_Pro, serif;
+  font-style: italic;
+  font-size: 25px;
+  height: 50px;
+  width: 150px;
+  border-radius: 30px;
+  position: relative;
+  background: #4CC09B;
+  text-align: center;
+  line-height: 50px;
+  display: block;
+  left: 46%;
+  text-decoration: none;
+  color: black;
+  top: -10px;
+}
+
+/*# sourceMappingURL=homepage.css.map */

@@ -1,20 +1,20 @@
 import React from "react";
 
 import Nav from "../organisms/nav/nav";
-import background from '../../media/img/backgroundHome.png'
+import Background from "../atoms/background";
 
 
 export const Homepage = () => {
 
     return(
         <div className={'homepage'}>
-            <img src={background} alt="logo" className={'homepage__background'} />
+            <Background />
             <Nav />
             <div className={'homepage__center'}>
                 <span>Accelerating sustainability</span>
                 <span className={'homepage__center__description'}>Become part of the movement</span>
                 <div className={'homepage__center__authBtn'}>
-                <button id={'homepage__center__authBtn__register'}>Register</button>
+                <a href={'/auth'} id={'homepage__center__authBtn__register'}>Register</a>
                 </div>
             </div>
         </div>
