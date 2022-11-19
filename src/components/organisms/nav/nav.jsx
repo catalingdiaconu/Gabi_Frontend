@@ -1,7 +1,7 @@
 import React from "react";
 
 import { BiUserCircle } from 'react-icons/bi'
-import logo from '../media/logo.svg'
+import logo from '../../../media/img/logo.svg'
 
 
 export default function Nav () {

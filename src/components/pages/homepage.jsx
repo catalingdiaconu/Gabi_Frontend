@@ -1,7 +1,7 @@
 import React from "react";
 
-import Nav from "../../nav/nav";
-import background from './media/backgroundHome.png'
+import Nav from "../organisms/nav/nav";
+import background from '../../media/img/backgroundHome.png'
 
 
 export const Homepage = () => {
