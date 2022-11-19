@@ -1,6 +1,6 @@
 import React from "react";
 
-import Nav from "./nav/nav";
+import Nav from "../../nav/nav";
 import background from './media/backgroundHome.png'
 
 
