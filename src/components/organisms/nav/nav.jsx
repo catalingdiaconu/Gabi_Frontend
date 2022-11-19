@@ -1,6 +1,6 @@
 import React from "react";
 
-import { BiUserCircle } from 'react-icons/bi'
+import { BiLogInCircle } from 'react-icons/bi'
 import logo from '../../../media/img/logo.svg'
 
 
@@ -12,7 +12,7 @@ export default function Nav () {
                 <ul className={'nav__menu'}>
                     <a href="/" className={'nav__menu__item'}>Home</a>
                     <a href="" className={'nav__menu__item'}>About</a>
-                    <button className={'nav_menu__item nav__menu__icon'}><BiUserCircle /></button>
+                    <a href={'/login'} className={'nav_menu__item nav__menu__icon'}><BiLogInCircle /></a>
                 </ul>
             </nav>
         </>

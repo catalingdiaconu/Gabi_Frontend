@@ -2,8 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 
-import './styles/homepage.css'
-import './styles/nav.css'
+import './styles/homepage.scss'
+import './styles/nav.scss'
+import './styles/auth.scss'
 import './index.scss'
 
 
