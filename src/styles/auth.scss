@@ -8,7 +8,7 @@
 .gradient_background_register {
   background-image: linear-gradient(to right, #C1F6EC, #A4EDE4, #45D2CA);
   width: 100%;
-  height: 2200px;
+  height: 2400px;
   position: absolute;
 }
 
@@ -126,4 +126,8 @@ button{
   #yesVat {
     margin-left: 20px;
   }
+}
+
+.navbar {
+  padding-bottom: 7rem;
 }

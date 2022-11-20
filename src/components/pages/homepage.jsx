@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 
 import Nav from "../organisms/nav/nav";
 import Background from "../atoms/background";
@@ -12,9 +12,9 @@ export const Homepage = () => {
             <Nav />
             <div className={'homepage__center'}>
                 <span>Accelerating sustainability</span>
-                <span className={'homepage__center__description'}>Become part of the movement</span>
+                <span className={'homepage__center__description'}>Become part of the movement </span>
                 <div className={'homepage__center__authBtn'}>
-                <a href={'/register'} id={'homepage__center__authBtn__register'}>Register</a>
+                     <a href={'/register'} id={'homepage__center__authBtn__register'}>Register</a>
                 </div>
             </div>
             <Footer />
