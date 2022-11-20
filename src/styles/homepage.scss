@@ -1,9 +1,11 @@
+
 .homepage__background {
   width: 100%;
   height: 1039px;
   position: absolute;
   background-size: cover;
   background-repeat: no-repeat;
+  z-index: -1;
 }
 
 .homepage__center {

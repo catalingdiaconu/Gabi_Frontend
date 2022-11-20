@@ -5,6 +5,7 @@
   background: transparent;
   position: fixed;
   margin: auto;
+  z-index: 100;
 }
 
 .nav__logo {
@@ -26,7 +27,7 @@
   text-decoration: none;
   color: black;
   font-size: 30px;
-  margin-left: 60px;
+  margin-left: -20px;
   margin-right: 60px;
   font-family: Crimson_Pro, serif;
   font-style: italic;

@@ -1,9 +1,19 @@
 import React,{useState} from "react";
-import Nav from '../organisms/nav/nav'
+import Nav from '../organisms/nav/nav';
+import Dropdown from 'react-dropdown';
 
 import axios from  'axios'
 
+const options = [
+    { value: 'producer', label: 'Producer' },
+    { value: 'collector', label: 'Collector' },
+    { value: 'manufacturer', label: 'Manufacturer' }
+]
+
 export default function Register () {
+
+    const [value, setValue] = useState('')
+    const defaultValue = options[0].value
 
     const [type, setType] = useState('')
     const [companyName, setCompanyName] = useState('')
@@ -84,6 +94,9 @@ export default function Register () {
             <label htmlFor="bankAccount">Bank Account</label>
             <input type="text" placeholder="Bank Account" id="bankAccount" onChange={e => setBankAcc(e.target.value)}/>
 
+            <label htmlFor="bank">Bank</label>
+            <input type="text" placeholder="Bank" id="bank" />
+
             <p>Environment Certificate</p>
             <label htmlFor="numberEnvCertificate">Number Environment Certificate</label>
             <input type="text" placeholder="Number Environment Certificate" id="numberEnvCertificate" onChange={e => setNumberEnvironmentCertificate(e.target.value)}/>
@@ -96,8 +109,17 @@ export default function Register () {
             <label htmlFor="nameAdministrator">Name Administrator</label>
             <input type="text" placeholder="Name Administrator" id="nameAdministrator" onChange={e => setAdminName(e.target.value)}/>
 
+            <label htmlFor="city">City</label>
+            <input type="text" placeholder="city" id="city" />
+
+            <label htmlFor="county">County</label>
+            <input type="text" placeholder="county" id="county" />
+
             <label htmlFor="telephoneNumber">Telephone Number</label>
             <input type="numeric" placeholder="Telephone Number" id="telephoneNumber" onChange={e => setPhone(e.target.value)}/>
+
+
+            <Dropdown options={options} onChange={setValue} value={defaultValue} placeholder="Select an option" />
 
             <button>Register</button>
 
