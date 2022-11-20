@@ -2,7 +2,7 @@ import React, {useState} from "react";
 
 import Nav from "../organisms/nav/nav";
 import Background from "../atoms/background";
-
+import Footer from "../organisms/footer"
 
 export const Homepage = () => {
 
@@ -17,6 +17,7 @@ export const Homepage = () => {
                 <a href={'/register'} id={'homepage__center__authBtn__register'}>Register</a>
                 </div>
             </div>
+            <Footer />
         </div>
     );
 

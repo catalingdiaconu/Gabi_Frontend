@@ -11,7 +11,8 @@ export default function Nav () {
                 <img src={logo} alt="logo" className={'nav__logo'} />
                 <ul className={'nav__menu'}>
                     <a href="/" className={'nav__menu__item'}>Home</a>
-                    <a href="" className={'nav__menu__item'}>About</a>
+                    <a href="/" className={'nav__menu__item'}>About</a>
+                    <a href={'/marketplace'} className={'nav__menu__item'}>Marketplace</a>
                     <a href={'/login'} className={'nav_menu__item nav__menu__icon'}><BiLogInCircle /></a>
                 </ul>
             </nav>

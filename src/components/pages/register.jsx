@@ -1,7 +1,19 @@
-import React from "react";
+import React,{ useState } from "react";
+import Dropdown from 'react-dropdown';
+import 'react-dropdown/style.css';
 import Nav from '../organisms/nav/nav'
 
+const options = [
+    { value: 'producer', label: 'Producer' },
+    { value: 'collector', label: 'Collector' },
+    { value: 'manufacturer', label: 'Manufacturer' }
+]
+
 export default function Register () {
+
+    const [value, setValue] = useState('')
+    const defaultValue = options[0].value
+
     return (
         <div className={'gradient_background_register'}>
             <Nav />
@@ -37,6 +49,9 @@ export default function Register () {
             <label htmlFor="bankAccount">Bank Account</label>
             <input type="text" placeholder="Bank Account" id="bankAccount" />
 
+            <label htmlFor="bank">Bank</label>
+            <input type="text" placeholder="Bank" id="bank" />
+
             <p>Environment Certificate</p>
             <label htmlFor="numberEnvCertificate">Number Environment Certificate</label>
             <input type="text" placeholder="Number Environment Certificate" id="numberEnvCertificate" />
@@ -46,11 +61,20 @@ export default function Register () {
             <label htmlFor="address">Address</label>
             <input type="text" placeholder="address" id="address" />
 
-            <label htmlFor="nameAdministrator">Name Administrator</label>
-            <input type="text" placeholder="Name Administrator" id="nameAdministrator" />
+            <label htmlFor="city">City</label>
+            <input type="text" placeholder="city" id="city" />
+
+            <label htmlFor="county">County</label>
+            <input type="text" placeholder="county" id="county" />
+
+            <label htmlFor="nameAdministrator">Administrator name</label>
+            <input type="text" placeholder="Administrator name" id="nameAdministrator" />
 
             <label htmlFor="telephoneNumber">Telephone Number</label>
             <input type="numeric" placeholder="Telephone Number" id="telephoneNumber" />
+
+
+            <Dropdown options={options} onChange={setValue} value={defaultValue} placeholder="Select an option" />
 
             <button>Register</button>
 

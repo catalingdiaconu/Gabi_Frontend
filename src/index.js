@@ -5,6 +5,7 @@ import App from './App';
 import './styles/homepage.scss'
 import './styles/nav.scss'
 import './styles/auth.scss'
+import './styles/footer.scss'
 import './index.scss'
 
 
